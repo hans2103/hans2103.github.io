@@ -1,0 +1,5 @@
+{% for icon in site.social-icons %}
+<a class="social-icon--link {{ icon.class }}" href="{{ icon.url }}">
+    <span class="social-icon--title visuallyHidden">{{ icon.title }}</span>
+</a>
+{% endfor %}
