@@ -1,0 +1,71 @@
+/*
+Calendar
+
+markup:
+<div class="section">
+content
+</div>
+
+
+Styleguide 3.7
+*/
+
+.section {
+	padding: 2 * $spacing 0;
+
+	&--header {
+		text-align: center;
+	}
+
+	&--intro {
+		background-color: $color-one;
+	}
+
+	&--whois {
+
+	}
+
+	&--coding {
+		background-color: $color-two;
+
+		.section--content {
+			@include flexbox($alpha--plus) {
+				justify-content: space-between;
+			}
+		}
+
+		figure {
+			@include flexbox($alpha--plus) {
+				order: 1;
+				flex: 0 0 percentage(5/12);
+			}
+		}
+		.section--body {
+			@include flexbox($alpha--plus) {
+				order: 2;
+				flex: 0 0 percentage(5/12);
+			}
+		}
+	}
+
+	&--testing {
+
+	}
+
+	&--training {
+		background-color: $color-three;
+	}
+
+	&--sharing {
+
+	}
+
+	&--content {
+		@include flexbox($alpha--plus) {
+			display: flex;
+			align-items: center;
+		}
+		margin: 2 * $spacing 0;
+	}
+
+}

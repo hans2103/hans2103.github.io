@@ -1,0 +1,29 @@
+@mixin breakpoint($width, $type: min, $width--max: false) {
+	@if $type == min {
+		@media screen and (min-width: $width) {
+			@content;
+		}
+	} @else if $type == max {
+		@media screen and (max-width: $width) {
+			@content;
+		}
+	} @else if $type == range {
+		@media screen and (min-width: $width) and (max-width: $width--max) {
+			@content;
+		}
+	}
+}
+
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+	@media screen and (max-width: $device) {
+		@content;
+	}
+}

@@ -1,7 +1,12 @@
 ---
 title: "Hans is training"
-bg: yellow
-color: dark
+class: training
+
+img:
+ 
+  - url: /assets/images/hkweb-badges.svg
+    alt: Hans is training
+    class: inject-me--training
 ---
 
 ## Hans is training

@@ -1,10 +1,7 @@
 ---
 title: "Who is Hans?"
-bg: white
-color: dark
+class: whois
 ---
-
-## Who is Hans?
 
 ### Hans Kuijpers
 Curabitur rhoncus nisl at est iaculis consectetur. Praesent eget justo non nisl auctor ullamcorper. Morbi pellentesque pulvinar ante quis eleifend. Nullam pharetra est sodales lacinia sagittis. Maecenas sodales, odio aliquet viverra fringilla, lorem augue lacinia augue, in sodales enim mi et enim. Donec nunc ipsum, luctus ut auctor in, bibendum elementum purus. 

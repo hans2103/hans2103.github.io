@@ -1,0 +1,168 @@
+/*
+Text
+
+Styleguide 2.2
+*/
+
+/*
+Headings
+
+markup:
+<h1>H1 kop: Montserrat 26px, font-weight: 700, line-height: 30px, letter-spacing: 0.02em</h1>
+<h2>H2 kop: Montserrat 30px, font-weight: 700, line-height: 23px letter-spacing: 0.08em</h2>
+<h3>H3 kop: Montserrat 14px, font-weight: 400, line-height: 23px letter-spacing: 0.02em</h3>
+<h4>I am a level 4 heading</h4>
+<h5>I am a level 5 heading</h5>
+<h6>I am a level 6 heading</h6>
+
+sg-wrapper:
+<div class="type--{$modifiers}">
+<sg-wrapper-content/>
+</div>
+
+Styleguide 2.2.1
+*/
+
+h1,h2,h3,h4,h5,h6,
+.h1,.h2,.h3,.h4,.h5,.h6 {
+	margin: 0 0 0.75em;
+}
+
+h1,.h1 {
+	@include font($font-size--h1, $bold, 30px, $font-family--montserrat);
+}
+h2,.h2 {
+	@include font($font-size--h2, $bold, $line-height, $font-family--montserrat);
+	letter-spacing: 0.08em;
+}
+h3,.h3 {
+	@include font($font-size--h3, $normal, $line-height, $font-family--montserrat);
+}
+h4,.h4 {
+	@include font($font-size--h4, $normal, $line-height, $font-family--montserrat);
+}
+h5,.h5 {
+	@include font($font-size--h5, $normal, $line-height, $font-family--montserrat);
+}
+h6,.h6 {
+	@include font($font-size--h6, $normal, $line-height, $font-family--montserrat);
+}
+
+/*
+Paragraph
+
+markup:
+<p>I am a paragraph</p>
+
+sg-wrapper:
+<p>Body-text: Noto Sans 14px, line-height: 23px, letter-spacing: 0.02em. A paragraph (from the Greek paragraphos, "to write beside" or "written beside") is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
+
+Styleguide 2.2.2
+*/
+
+p {
+	font-size: $font-size--p;
+	letter-spacing: 0.02em;
+	&.i {
+		font-style: italic;
+	}
+	&.s {
+		font-weight: bold;
+	}
+}
+
+/*
+Blockquote
+
+markup:
+<blockquote> <p>A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text, and typically distinguished visually using indentation and a different typeface or smaller size quotation.</p> </blockquote>
+
+Styleguide 2.2.3
+*/
+
+blockquote {
+	font-size: $font-size--h3;
+	text-transform: uppercase;
+	margin: 20px 10px;
+	&:before {
+		display: inline-block;
+	}
+	&:after {
+		display: inline-block;
+	}
+}
+
+/*
+Inline elements
+
+markup:
+<p><a href="#">This is a text link</a></p>
+<p><strong>Strong is used to indicate strong importance</strong></p>
+<p><em>This text has added emphasis</em></p>
+<p>The <b>b element</b> is stylistically different text from normal text, without any special importance</p>
+<p>The <i>i element</i> is text that is set off from the normal text</p>
+<p>The <u>u element</u> is text with an unarticulated, though explicitly rendered, non-textual annotation</p>
+<p><del>This text is deleted</del> and <ins>This text is inserted</ins></p>
+<p><s>This text has a strikethrough</s></p>
+<p>Superscript<sup>Â®</sup></p>
+<p>Subscript for things like H<sub>2</sub>O</p>
+<p><small>This small text is small for for fine print, etc.</small></p>
+<p>Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr></p>
+<p>Keybord input: <kbd>Cmd</kbd></p>
+<p><q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short inline quotation</q></p>
+<p><cite>This is a citation</cite></p>
+<p>The <dfn>dfn element</dfn> indicates a definition.</p>
+<p>The <mark>mark element</mark> indicates a highlight</p>
+<p><code>This is what inline code looks like.</code></p>
+<p><samp>This is sample output from a computer program</samp></p>
+<p>The <var>variarble element</var>, such as <var>x</var> = <var>y</var></p>
+
+Styleguide 2.2.4
+*/
+
+strong, .strong {
+	//font-size: $font-size--p;
+	font-weight: $bold;
+}
+em, .em {
+	//font-size: $font-size--p;
+	font-style: italic;
+}
+sub, sup {
+	font-size: $font-size--small;
+}
+
+/*
+Time
+
+markup:
+<time datetime="2013-04-06T12:32+00:00">2 weeks ago</time>
+
+Styleguide 2.2.5
+*/
+
+/*
+Pre-formatted text
+
+markup:
+<pre>
+P R E F O R M A T T E D T E X T
+! # $ % & ( ) * + , - . /
+0 1 2 3 4 5 6 7 8 9 : ; < = > ?
+@ A B C D E F G H I J K L M N O
+P Q R S T U V W X Y Z [ \ ] ^ _
+` a b c d e f g h i j k l m n o
+p q r s t u v w x y z { | } ~
+</pre>
+
+Styleguide 2.2.6
+*/
+
+/*
+hr
+
+markup:
+<hr />
+
+Styleguide 2.2.7
+*/

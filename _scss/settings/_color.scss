@@ -1,0 +1,112 @@
+/*
+Color
+
+Colors used for HKweb.nl
+
+Styleguide 1.1
+*/
+
+/*
+Primary colors
+
+$color-one - orange color #F47914
+$color-two - blue color #60B5CA
+$color-three - beige color #FBE89C
+$color-four - black #333333
+$color-five - white(ish) #FEFFF7
+
+markup:
+<div style="background: {$modifiers};" class="styleguide-color">{$modifiers}</div>
+
+Styleguide 1.1.1
+*/
+
+$color-one: rgba(244, 121, 20, 1);
+$color-two: rgba(96, 181, 202, 1);
+$color-three: rgba(251, 232, 156, 1);
+$color-four: rgba(51, 51, 51, 1);
+$color-five: rgba(254, 255, 247, 1);
+
+/*
+Shades of grey
+
+$gray-darker - darker gray
+$gray - gray
+
+markup:
+<div style="background: {$modifiers};" class="styleguide-color">{$modifiers}</div>
+
+Styleguide 1.1.2
+*/
+
+$gray-darker: rgba(42, 42, 42, 1);
+$gray: rgba(129, 131, 118, 1);
+
+$black: $color-four;
+$black-true: rgba(0, 0, 0, 1);
+$white: $color-five;
+$white-true: rgba(255, 255, 255, 1);
+
+/*
+Link color
+
+$color-link-bg-light - link color on light background
+$color-link-bg-dark - link color on dark background
+
+markup:
+<div style="background: {$modifiers};" class="styleguide-color">{$modifiers}</div>
+
+Styleguide 1.1.3
+*/
+
+$color-link-bg-light: rgba(245, 121, 21, 1); // orange link #F57915
+$color-link-hover-bg-light: rgba(212, 101, 11, 1); // orange link hover #D4650B
+$color-link-visited-bg-light: rgba(155, 34, 66, 1); // purple link visited #9B2242
+$color-link-active-bg-light: rgba(36, 140, 166, 1); // blue link active #248CA6
+
+$color-link-bg-dark: $white;
+$color-link-hover-bg-dark: $white-true;
+$color-link-visited-bg-dark: $color-link-visited-bg-light;
+$color-link-active-bg-dark: $color-three;
+
+/*
+Button color
+
+$color-btn-bg-light - button color on light background
+$color-btn-bg-dark - button color on dark background
+
+markup:
+<div style="background: {$modifiers};" class="styleguide-color">{$modifiers}</div>
+
+Styleguide 1.1.4
+*/
+
+$color-btn-bg-light: $color-link-bg-light;
+$color-btn-border-bg-light: $color-link-bg-light;
+$color-btn-hover-bg-light: $color-link-hover-bg-light;
+$color-btn-hover-border-bg-light: $color-link-hover-bg-light;
+
+$color-btn-bg-dark: $color-link-bg-dark;
+$color-btn-border-bg-dark: $color-link-bg-dark;
+$color-btn-hover-bg-dark: $color-link-hover-bg-dark;
+$color-btn-hover-border-bg-dark: $color-link-hover-bg-dark;
+
+/*
+Functional names
+
+$text- color for text
+$type - text color
+
+markup:
+<div style="background: {$modifiers};" class="styleguide-color">{$modifiers}</div>
+
+Styleguide 1.1.5
+*/
+
+$text-color: #111;
+$background-color: #fdfdfd;
+$brand-color: #2a7ae2;
+
+$grey-color: #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark: darken($grey-color, 25%);

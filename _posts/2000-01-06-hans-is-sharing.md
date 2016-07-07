@@ -1,7 +1,12 @@
 ---
 title: "Hans is sharing"
-bg: white
-color: dark
+class: sharing
+
+img:
+ 
+  - url: /assets/images/hkweb-badges.svg
+    alt: Hans is sharing
+    class: inject-me--sharing
 ---
 
 ## Hans is sharing

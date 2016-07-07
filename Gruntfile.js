@@ -41,23 +41,6 @@ module.exports = function (grunt) {
             }
         },
 
-        // Iconfont
-        webfont: {
-            icons: {
-                src: '_vendor/icons/svg/*.svg',
-                dest: 'fonts/icons',
-                destCss: '_scss/utilities',
-                options: {
-                    font: 'icons',
-                    hashes: false,
-                    stylesheet: 'scss',
-                    relativeFontPath: '../fonts/icons/',
-                    template: '_vendor/icons/template.css',
-                    htmlDemo: false
-                }
-            }
-        },
-
         // sass (libsass) config
         sass: {
             options: {
@@ -81,14 +64,14 @@ module.exports = function (grunt) {
         // run tasks in parallel
         concurrent: {
             serve: [
-                's`ss',
+                'sass',
                 'watch',
                 'shell:jekyllServe'
             ],
             options: {
                 logConcurrentOutput: true
             }
-        },
+        }
 
     });
 
@@ -104,6 +87,6 @@ module.exports = function (grunt) {
     ]);
 
     // Register build as the default task fallback
-    grunt.registerTask('default', 'build');
+    grunt.registerTask('default', ['build', 'watch']);
 
 };

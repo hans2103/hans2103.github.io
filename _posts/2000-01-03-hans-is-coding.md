@@ -1,18 +1,22 @@
 ---
 title: "Hans is coding"
-bg: blue
-color: black
-fa-icon: toggle-on
+class: coding
+
+img:
+ 
+  - url: /assets/images/hkweb-badges.svg
+    alt: Hans is coding
+    class: inject-me--coding
 ---
 
-## Hans is coding
+### Joomla!, Magento and WordPress Front-end developer
 
-### Joomla!, Magento and WordPress FRONT-END DEVELOPER
-
-Mauris in vehicula quam, a adipiscing diam. Vivamus ut imperdiet lectus. Etiam vitae scelerisque magna, ac dignissim lorem. Nam scelerisque facilisis arcu, eu egestas eros sollicitudin at. Curabitur porttitor tristique augue, eget semper ni.
+Although this page was built using Jekyll most of the time I work with Joomla! and Magento (1.9.x and 2.x) and sometimes WordPress. The CMS I use depends on the needs of the project. A lot of functionality can be done with the core of each and every CMS. 
 
 Proin adipiscing massa lorem, nec consectetur neque auctor sed. Nam volutpat, tellus sed aliquet condimentum, erat urna sollicitudin tellus, lacinia rutrum magna ipsum in urna. Phasellus quis semper elit. Pellentesque egestas vehicula faucibus. 
 
 Pellentesque convallis, felis vel egestas gravida, ligula est aliquet ante, a eleifend nulla nulla.
 
 [See his work on Behance](https://www.behance.net/hans2103)
+
+
