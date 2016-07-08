@@ -4,8 +4,7 @@ class: training
 
 img:
  
-  - url: /images/hkweb-badges.svg
-    alt: Hans is training
+  - url: /img/training
     class: inject-me--training
 ---
 

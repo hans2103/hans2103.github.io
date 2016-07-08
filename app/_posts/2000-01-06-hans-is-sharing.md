@@ -4,7 +4,7 @@ class: sharing
 
 img:
  
-  - url: /images/hkweb-badges.svg
+  - url: /img/hkweb-badges.svg
     alt: Hans is sharing
     class: inject-me--sharing
 ---

@@ -4,7 +4,7 @@ class: testing
 
 img:
  
-  - url: /images/hkweb-badges.svg
+  - url: /img/hkweb-badges.svg
     alt: Hans is testing
     class: inject-me--testing
 ---
