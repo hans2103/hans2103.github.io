@@ -10,7 +10,9 @@
   "bugs": {
     "url": "https://github.com/hans2103/hans2103.github.io/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "scsslint": "0.0.3"
+  },
   "devDependencies": {
     "autoprefixer": "^6.3.6",
     "grunt": "^1.0.1",
