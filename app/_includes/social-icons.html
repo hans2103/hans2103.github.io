@@ -1,8 +1,0 @@
-<div class="site-footer--social social-icon--list">
-    {% for icon in site.social-icons %}
-    <a class="social-icon--link {{ icon.class }}" href="{{ icon.url }}">
-        {% include {{ icon.class | prepend: 'social-icons/' | append: '.svg' }} %}
-        <span class="social-icon--title">{{ icon.title }}</span>
-    </a>
-    {% endfor %}
-</div>
