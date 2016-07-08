@@ -1,0 +1,12 @@
+# Unignore everything
+!**/*
+
+# Re-ignore things
+dist
+node_modules
+.tmp
+bower_components
+app/_includes/critical.css
+.jekyll-metadata
+.DS_Store*
+.sass-cache
