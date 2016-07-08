@@ -36,7 +36,7 @@ h2,.h2 {
 	letter-spacing: 0.08em;
 }
 h3,.h3 {
-	@include font($font-size--h3, $normal, $line-height, $font-family--montserrat);
+	@include font($font-size--h3, $bold, $line-height, $font-family--montserrat);
 }
 h4,.h4 {
 	@include font($font-size--h4, $normal, $line-height, $font-family--montserrat);

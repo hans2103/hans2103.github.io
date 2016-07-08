@@ -1,5 +1,5 @@
 @mixin button-medium {
-	@include font($font-size--h4, $normal, $line-height, $font-family--roboto);
+	@include font($font-size--h4, $normal, $line-height, $font-family--arvo);
 	line-height: $font-size;
 	padding: floor(0.5 * $font-size);
 }
