@@ -1,30 +1,30 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+# Jekyll configuration
+# Use _config.build.yml to override these settings on `grunt build`.
 
-# Site settings
-title: HKweb - Joomla en Magento frontend development
-email: hans@hkweb.nl
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-google-tag-manager: GTM-NDTF7X
-url: "http://hkweb.nl" # the base hostname & protocol for your site
-twitter_username: hans2103
-github_username:  hans2103
+# Note: Grunt handles some Jekyll configuration. If you set something here and
+# it doesn't work, check if it is set in the Gruntfile.
 
-# Build settings
-markdown: kramdown
+title: HKweb.nl
+url: http://localhost:4000
+tagline: Joomla en Magento frontend development
+description: HKweb.nl is a website from frontend developer Hans Kuijpers. Building sites with Joomla! and Magento.
+analytics: GTM-NDTF7X
 
-exclude: ['css', '_scss']
-exclude: ['fonts']
-exclude: ['node_modules']
-keep_files: ['_site/css']
+environment: development
+
+# social
+facebook: https://www.facebook.com/hans2103
+facebookAppID: 1730788567189229
+feed: /feed.xml
+twitter: hans2103
+
+author:
+  name: Hans Kuijpers
+  email: info@hkweb.nl
+  github: hans2103
+  twitter: hans2103
+  googleplus: 101700795462513172784
+  pinterest: f847bdacf83eecd67f0641fb3a164102
 
 social-icons:
   - title: Facebook
@@ -51,3 +51,64 @@ social-icons:
   - title: Slideshare
     url: http://www.slideshare.net/hans2103
     class: slideshare
+
+
+exclude: ['images', 'scripts', '**.png', '**.jpg', '**.jpeg', '**.gif', '**.svg', '**.ico']
+keep_files: ['perf']
+future: true
+
+# Compile posts in the _drafts directory.
+# _config.build.yml sets this to false on `grunt build`
+show_drafts: true
+
+permalink: /:title/
+relative_permalinks: false
+
+category_title_prefix: ''
+category_dir: /
+
+# disable this with ''
+excerpt_separator: ''
+
+# Use redcarpet for jekyll-picture-tag plugin
+markdown: redcarpet
+
+# https://github.com/robwierzbowski/jekyll-picture-tag
+# Note that I’ve reduced the number of presets to decrease the build time
+# while doing development. See _config.build.yml for further presets.
+picture:
+  source: images/originals
+  output: generated
+  markup: picture
+  presets:
+    default:
+      ppi: [1]
+      source_default:
+        width: 1280
+    sidebar:
+      ppi: [1]
+      attr:
+        class: 'image sidebar-image'
+        itemprop: 'contentURL'
+      source_default:
+        width: 480
+    image--3-4:
+      ppi: [1]
+      source_default:
+        width: 959
+    image--2-3:
+      ppi: [1]
+      source_default:
+        width: 767
+    image--1-2:
+      ppi: [1]
+      source_default:
+        width: 767
+    image--1-3:
+      ppi: [1]
+      source_default:
+        width: 480
+    image--1-4:
+      ppi: [1]
+      source_default:
+        width: 480

@@ -1,0 +1,13 @@
+{
+  "name": "hkweb",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "loadcss": "~0.1.6",
+    "OptimizedWebfontLoading": "git://github.com/bdadam/OptimizedWebfontLoading.git",
+    "picturefill": "~2.3.1",
+    "smooth-scroll": "git://github.com/cferdinandi/smooth-scroll.git"
+  },
+  "devDependencies": {
+  }
+}

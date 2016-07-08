@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "icons";
+  src: url("../fonts/icons/icons.eot");
+  src: url("../fonts/icons/icons.eot?#iefix") format("embedded-opentype"), url("../fonts/icons/icons.woff") format("woff"), url("../fonts/icons/icons.ttf") format("truetype"), url("../fonts/icons/icons.svg#icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+@font-face {
+    font-family: "icons";
+    src: url("../fonts/icons/icons.svg#icons") format("svg");
+}
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 400 14px/23px Arvo, serif;
+  color: #333333;
+  background-color: #fefff7;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+}
+
+.wrapper {
+  max-width: -webkit-calc(800px - (30px * 2));
+  max-width: calc(800px - (30px * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .wrapper {
+    max-width: -webkit-calc(800px - (30px));
+    max-width: calc(800px - (30px));
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+.wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a {
+  color: #2a7ae2;
+  text-decoration: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}

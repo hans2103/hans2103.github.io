@@ -1,0 +1,65 @@
+.section--title {
+	display: inline-block;
+	position: relative;
+	text-shadow: 0 2px 0 transparentize($gray, .25);
+
+	&:before,
+	&:after {
+		content: "";
+		position: absolute;
+		height: 0px;
+		border-top: 2px solid $black;
+		border-bottom: 2px solid transparentize($gray, .25);
+		top: 50%;
+		width: $spacing;
+
+		@include breakpoint($alpha--plus) {
+			width: 2 * $spacing;
+		}
+	}
+	&:before {
+		right: 100%;
+		margin-right: 15px;
+	}
+	&:after {
+		left: 100%;
+		margin-left: 15px;
+	}
+
+	.section--intro &,
+	.section--coding &,
+	.section--training & {
+		text-shadow: 0 2px 0 transparentize($color-five, .25);
+		&:before,
+		&:after {
+			border-bottom-color: transparentize($color-five, .25);
+		}
+	}
+}
+
+
+.inject-me {
+	.hkweb-badges {
+		> g {
+			display: none;
+		}
+	}
+	&.inject-me--coding .hkweb-badges .hans-is-coding,
+	&.inject-me--testing .hkweb-badges .hans-is-testing,
+	&.inject-me--training .hkweb-badges .hans-is-training,
+	&.inject-me--sharing .hkweb-badges .hans-is-sharing {
+		display: block;
+	}
+}
+
+
+.site-footer {
+	&--social {
+		padding: 3 * $spacing 0;
+	}
+	&--copyright {
+		max-width: $charlie;
+		margin: 0 auto;
+		text-align: center;
+	}
+}
