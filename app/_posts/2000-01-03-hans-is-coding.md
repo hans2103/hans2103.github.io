@@ -17,6 +17,4 @@ Proin adipiscing massa lorem, nec consectetur neque auctor sed. Nam volutpat, te
 
 Pellentesque convallis, felis vel egestas gravida, ligula est aliquet ante, a eleifend nulla nulla.
 
-[See his work on Behance](https://www.behance.net/hans2103)
-
-
+[See his work on Behance](https://www.behance.net/hans2103){:class="anchor--button"}

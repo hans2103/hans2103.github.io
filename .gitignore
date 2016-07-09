@@ -11,3 +11,4 @@ app/_includes/critical.css
 .DS_Store*
 .sass-cache
 .jekyll
+_site

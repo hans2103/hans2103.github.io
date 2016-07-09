@@ -15,7 +15,11 @@
 }
 }
 
-body {
+body,
+h2,
+h3,
+p,
+ul {
   margin: 0;
   padding: 0;
 }
@@ -26,6 +30,23 @@ body {
   background-color: #fefff7;
   font-feature-settings: "kern" 1;
   font-kerning: normal;
+}
+
+h2,
+h3,
+p,
+ul {
+  margin-bottom: 15px;
+}
+
+ul {
+  margin-left: 30px;
+}
+
+h2,
+h3 {
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .wrapper {
@@ -52,11 +73,106 @@ body {
   clear: both;
 }
 
+h2,
+h3 {
+  margin: 0 0 0.75em;
+}
+
+h2 {
+  font: 700 30px/23px Montserrat Bold, sans-serif;
+  letter-spacing: 0.08em;
+}
+
+h3 {
+  font: 700 14px/23px Montserrat Bold, sans-serif;
+}
+
+p {
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+
 a {
   color: #2a7ae2;
   text-decoration: none;
 }
 
-svg:not(:root) {
-  overflow: hidden;
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container::before,
+.container::after {
+  content: " ";
+  display: table;
+}
+
+.container::after {
+  clear: both;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.section--header {
+  text-align: center;
+}
+
+.section--intro {
+  background-color: #f47914;
+}
+
+.section--coding {
+  background-color: #60b5ca;
+}
+
+.section--title {
+  display: inline-block;
+  position: relative;
+  text-shadow: 0 2px 0 rgba(129, 131, 118, 0.75);
+}
+
+.section--title:before,
+.section--title:after {
+  content: "";
+  position: absolute;
+  height: 0px;
+  border-top: 2px solid #333333;
+  border-bottom: 2px solid rgba(129, 131, 118, 0.75);
+  top: 50%;
+  width: 30px;
+}
+
+@media screen and (min-width: 440px) {
+  .section--title:before,
+  .section--title:after {
+    width: 60px;
+  }
+}
+
+.section--title:before {
+  right: 100%;
+  margin-right: 15px;
+}
+
+.section--title:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+.section--intro .section--title,
+.section--coding .section--title {
+  text-shadow: 0 2px 0 rgba(254, 255, 247, 0.75);
+}
+
+.section--intro .section--title:before,
+.section--intro .section--title:after,
+.section--coding .section--title:before,
+.section--coding .section--title:after {
+  border-bottom-color: rgba(254, 255, 247, 0.75);
 }
