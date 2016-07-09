@@ -46,6 +46,10 @@ Styleguide 3.7
 				flex: 0 0 percentage(5/12);
 			}
 		}
+
+		.anchor--button {
+			@include button($white, transparent, $white);
+		}
 	}
 
 	&--testing {
