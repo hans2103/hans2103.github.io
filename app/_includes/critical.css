@@ -20,6 +20,7 @@
 }
 
 body,
+h1,
 h2,
 h3,
 p,
@@ -36,6 +37,7 @@ body {
   font-kerning: normal;
 }
 
+h1,
 h2,
 h3,
 p,
@@ -43,43 +45,30 @@ ul {
   margin-bottom: 15px;
 }
 
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
 ul {
   margin-left: 30px;
 }
 
+h1,
 h2,
 h3 {
   font-weight: 400;
   text-transform: uppercase;
 }
 
-.wrapper {
-  max-width: -webkit-calc(800px - (30px * 2));
-  max-width: calc(800px - (30px * 2));
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 30px;
-  padding-left: 30px;
-}
-
-@media screen and (max-width: 800px) {
-  .wrapper {
-    max-width: -webkit-calc(800px - (30px));
-    max-width: calc(800px - (30px));
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-}
-
-.wrapper:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
+h1,
 h2,
 h3 {
   margin: 0 0 0.75em;
+}
+
+h1 {
+  font: 700 60px/30px Montserrat Bold, sans-serif;
 }
 
 h2 {
@@ -129,10 +118,82 @@ a {
 
 .section--intro {
   background-color: #f47914;
+  padding-top: 150px;
 }
 
-.section--coding {
-  background-color: #60b5ca;
+@media screen and (min-width: 768px) {
+  .section--intro {
+    padding-top: 260px;
+  }
+}
+
+.site-header {
+  border-top: 5px solid #333333;
+}
+
+.site-header > .container {
+  position: relative;
+}
+
+.hkweb--link {
+  position: absolute;
+  top: 10px;
+  display: block;
+  width: 100px;
+  height: 100px;
+  color: #fefff7;
+}
+
+@media screen and (min-width: 768px) {
+  .hkweb--link {
+    top: 30px;
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.hkweb--img {
+  border-radius: 100%;
+  background-color: #333333;
+}
+
+.hkweb--txt {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  border-radius: 100%;
+  background-color: #333333;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.hkweb--txt p {
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  color: #fefff7;
+  padding: 30px 0;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.hkweb--txt span {
+  color: #f47914;
+  text-transform: uppercase;
+  line-height: 18px;
+}
+
+.page--title {
+  font-size: 60px;
+  text-shadow: 0 2px 0 rgba(254, 255, 247, 0.75);
+  text-transform: uppercase;
+  margin-left: 16.66667%;
 }
 
 .section--title {
@@ -167,16 +228,4 @@ a {
 .section--title:after {
   left: 100%;
   margin-left: 15px;
-}
-
-.section--intro .section--title,
-.section--coding .section--title {
-  text-shadow: 0 2px 0 rgba(254, 255, 247, 0.75);
-}
-
-.section--intro .section--title:before,
-.section--intro .section--title:after,
-.section--coding .section--title:before,
-.section--coding .section--title:after {
-  border-bottom-color: rgba(254, 255, 247, 0.75);
 }

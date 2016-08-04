@@ -11,15 +11,22 @@
         {% capture id %}{{ page.id | remove:'/' | downcase }}{% endcapture %}
         <section id="section--{{page.class}}" class="section section--{{page.class}}">
             <div class="container {{ page.style }}">
-                {% if page.title %}
-                <header class="section--header">
-                    <h2 class="section--title">{{ page.title }}</h2>
-                </header>
-                {% endif %}
+                {% case page.class %}
+                    {% when 'intro' %}
+                        <h1 class="page--title">{{ page.title }}</h1>
+                    {% else %}
+                        {% if page.title %}
+                            <header class="section--header">
+                                <h2 class="section--title">{{ page.title }}</h2>
+                            </header>
+                        {% endif %}
+                {% endcase %}
 
                 {% case page.class %}
                     {% when 'intro' %}
-                        intro
+                        <div class="section--body">
+                            {{ page.content }}
+                        </div>
                     {% when 'whois' %}
                         {{ page.content }}
                     {% when 'coding' %}

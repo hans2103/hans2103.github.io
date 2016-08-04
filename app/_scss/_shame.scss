@@ -1,3 +1,85 @@
+.site-header {
+	border-top: $spacing--micro solid $color-four;
+
+	> .container {
+		position: relative;
+	}
+}
+
+
+.hkweb {
+	&--link {
+		position: absolute;
+		top: $spacing--third;
+		display: block;
+		width: 100px;
+		height: 100px;
+		color: $color-five;
+		@include breakpoint($charlie) {
+			top: $spacing;
+			width: 150px;
+			height: 150px;
+		}
+	}
+	&--img {
+		border-radius: 100%;
+		background-color: $color-four;
+		transition: all .35s ease-out;
+		.hkweb--link:hover & {
+			transform: translateY(-100%);
+			opacity: 0;
+			pointer-events: none;
+		}
+	}
+	&--img-paraaf,
+	&--img-webdesign {
+		fill: $color-five;
+	}
+	&--txt {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+
+		text-align: center;
+		border-radius: 100%;
+		background-color: $color-four;
+
+		backface-visibility: hidden;
+		transition: all .35s ease-out;
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+		transform: scale(.5);
+		.hkweb--link:hover & {
+			opacity: 1;
+			visibility: visible;
+			transform: scale(1);
+		}
+		p {
+			font-family: $font-family--fallback;
+			color:  $color-five;
+			padding: $spacing 0;
+			font-size: $font-size--small;
+			line-height: $line-height--small;
+		}
+		span {
+			color: $color-one;
+			text-transform: uppercase;
+			line-height: $line-height--small;
+		}
+	}
+}
+
+.page--title {
+	font-size: $font-size--h1;
+	text-shadow: 0 2px 0 transparentize($color-five, .25);
+	text-transform: uppercase;
+
+	margin-left: percentage(2/12);
+}
+
 .section--title {
 	display: inline-block;
 	position: relative;

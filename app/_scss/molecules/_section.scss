@@ -19,6 +19,10 @@ Styleguide 3.7
 
 	&--intro {
 		background-color: $color-one;
+		padding-top: 150px;
+		@include breakpoint($charlie) {
+			padding-top: 260px;
+		}
 	}
 
 	&--whois {
