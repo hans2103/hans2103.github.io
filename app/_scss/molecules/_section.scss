@@ -54,13 +54,106 @@ Styleguide 3.7
 
 	&--testing {
 
+		.section--content {
+			@include flexbox($alpha--plus) {
+				justify-content: space-between;
+			}
+		}
+
+		figure {
+			@include flexbox($alpha--plus) {
+				order: 2;
+				flex: 0 0 percentage(5/12);
+			}
+		}
+		.section--body {
+			@include flexbox($alpha--plus) {
+				order: 1;
+				flex: 0 0 percentage(5/12);
+			}
+		}
+
+		.anchor--button {
+			@include button($color-one, transparent, $color-one);
+		}
+
 	}
 
 	&--training {
 		background-color: $color-three;
+
+		.section--content {
+			@include flexbox($alpha--plus) {
+				flex-wrap: wrap;
+			}
+		}
+
+		figure {
+			@include flexbox($alpha--plus) {
+				order: 1;
+				flex: 0 0 percentage(12/12);
+				max-width: percentage(5/12);
+				margin: 0 auto;
+			}
+		}
+		.section--body {
+			@include flexbox($alpha--plus) {
+				order: 2;
+				flex: 0 0 percentage(12/12);
+
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+
+				> div {
+					flex: 0 0 percentage(5/12);
+					text-align: left;
+				}
+			}
+
+			> p:last-child {
+				@include flexbox($alpha--plus) {
+					order: 99;
+					align-self: stretch;
+					flex: 0 0 percentage(12/12);
+					text-align: center;
+				}
+			}
+		}
+		.anchor--button {
+			@include button($color-one, transparent, $color-one);
+		}
 	}
 
 	&--sharing {
+
+		.section--content {
+
+		}
+
+		figure {
+			@include flexbox($alpha--plus) {
+				order: 1;
+				flex: 0 0 percentage(4/12);
+				margin: 0 auto;
+			}
+		}
+		.section--body {
+			@include flexbox($alpha--plus) {
+				order: 2;
+				flex: 0 0 percentage(8/12);
+
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+
+				> div {
+					flex: 0 0 percentage(6/12);
+					text-align: left;
+					padding-left: $spacing;
+				}
+			}
+		}
 
 	}
 
