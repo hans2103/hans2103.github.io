@@ -25,4 +25,4 @@ Ut eleifend sed velit nec interdum. Integer porttitor tristique nibh, in molesti
 In hac habitasse platea dictumst. Aenean eget est at enim aliquet!
 </div>
 
-[Ask Hans to train you](#contact){:class="anchor--button"}
+[Ask Hans to train you](#contact-hans){:rel="modal:open"}{:class="anchor--button"}

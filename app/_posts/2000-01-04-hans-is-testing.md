@@ -19,4 +19,4 @@ Vivamus molestie neque turpis, eu sagittis tellus tincidunt in. Etiam rhoncus in
 
 Configuration and running testPage loading timeReal life traffic simulationOptimization advice
 
-[Contact Hans for a test](#contact){:class="anchor--button"}
+[Contact Hans for a test](#contact-hans){:rel="modal:open"}{:class="anchor--button"}

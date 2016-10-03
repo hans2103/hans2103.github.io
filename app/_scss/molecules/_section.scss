@@ -167,6 +167,18 @@ Styleguide 3.7
 			align-items: center;
 		}
 		margin: 2 * $spacing 0;
+
+		&--small {
+			margin: $spacing 0;
+		}
+	}
+
+	&--modal {
+		.anchor--button {
+			@include button($color-one, transparent, $color-one);
+			display: block;
+			margin: 0 auto;
+		}
 	}
 
 }
